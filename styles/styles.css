@@ -1,0 +1,150 @@
+body {
+     background: #FFFFFF none repeat scroll 0% 0%;
+    color: #333;
+    text-align: center;
+    line-height: 1.4;
+    margin: 0;
+    overflow-y: scroll;
+    text-decoration: none;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 13px;
+}
+
+#navigation {
+  background: #FFF;
+  width: 100%;
+  float: right;
+  box-shadow: 0px 0px 3px #656161;
+  position: fixed;
+  height: 70px;
+  z-index: 1000;
+  text-align: left;
+}
+
+.haut {
+	background: #FFF;
+	width: 100%;
+	float: left;
+	box-shadow: 0px 0px 3px #656161;
+	position: fixed;
+	height: 70px;
+	z-index: 1000;
+	text-align: right;
+}
+
+.headerlist {
+	width: 100%;
+	text-align: left;
+	border-bottom: 2px solid #2ECC71;
+	background: #FFF none repeat scroll 0% 0%;
+	font-size: 15px;
+}
+
+.headerlist ul {
+	display: inline;
+	text-align: right;
+	color: #2ECC71;
+	position: relative;
+	text-decoration: none;
+}
+
+.headerlist ul li {
+	display: inline-block;
+	padding: 14px 13px;
+}
+
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#menu-deroulant {
+/* on centre le menu dans la page */
+    text-align: center;
+}
+
+#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+
+#menu-deroulant ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+	color:#000;
+}
+
+#menu-deroulant ul {
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+
+#menu-deroulant li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
+}
+
+#menu-deroulant li:hover ul li a {
+    background-color:#FFF;
+	padding: 13px;
+	width:100%
+}
+
+#menu-deroulant li a{
+	color: rgba(0, 0, 0, 0.74);
+	padding: 25px 14px;
+	transition: background-color 200ms, color 200ms;
+	font-size: 14px;
+}
+
+#menu-deroulant li:hover {
+	background: rgb(248, 250, 250);
+	color: #2ECC71;
+	border-bottom: 2px solid #2ECC71;
+}
+
+#menu-deroulant li:hover ul li:hover {
+	color: #2ECC71;
+	border:none;
+}
+
+#menu-deroulant li:hover ul li:hover a {
+	background: rgb(248, 250, 250) !important;
+}
+
+#menu-deroulant {
+	float: right;
+	vertical-align: middle;
+	position: relative;
+	right: 35px;
+	letter-spacing: 0.4px;
+}
+
+@media (max-width: 768px) {
+.haut {
+	text-align:center;
+}
+}
+
+
+#header_block {
+	background: transparent url(http://e-fitness.org/forum/images/emerald/hb.png) repeat fixed 0% 0%;
+	width: 100%;
+	height:800px;
+	float:left;
+	
+	text-align: left;
+	height: 139px;
+	border-bottom: 2px solid #2ECC71;
+	text-shadow: 0px 1px 0px rgb(39, 33, 59);
+	animation: bganim 10s linear infinite;
+}
